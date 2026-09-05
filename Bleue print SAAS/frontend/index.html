@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLEUE PRINT — Aperçu SaaS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark" aria-label="Logo BLEUE PRINT">
+          <img src="assets/Gemini_Generated_Image_3hppl93hppl93hpp.jpg" alt="BLEUE PRINT" />
+        </div>
+        <div>
+          <div class="brand-name">BLEUE PRINT</div>
+          <div class="brand-subtitle">Calcul de conformité douanière</div>
+        </div>
+      </div>
+      <div class="topbar-tag">Prototype</div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Sénégal • CEDEAO • UEMOA</span>
+          <h1>Calculez vos droits de douane avec précision.</h1>
+          <p>
+            Transformez une description produit en un plan de coûts lisible : codes SH,
+            taxes applicables, coût total estimé et documents généralement requis.
+          </p>
+          <div class="hero-actions">
+            <button id="matchBtn" class="primary">Calculer</button>
+            <a href="#result" class="ghost-link">Voir le résultat</a>
+          </div>
+        </div>
+
+        <div class="blueprint-panel" aria-label="Vue de calcul technique">
+          <div class="blueprint-header">
+            <span>Plan de coût</span>
+            <span class="dot-status">Calculé</span>
+          </div>
+
+          <div class="layer-stack">
+            <div class="layer-row">
+              <span>Droit de douane</span>
+              <strong id="layerCustoms">10 000 CFA</strong>
+            </div>
+            <div class="layer-line"></div>
+            <div class="layer-row">
+              <span>Redevance statistique</span>
+              <strong id="layerRs">1 000 CFA</strong>
+            </div>
+            <div class="layer-line"></div>
+            <div class="layer-row">
+              <span>Prélèvement communautaire</span>
+              <strong id="layerPc">2 000 CFA</strong>
+            </div>
+            <div class="layer-line"></div>
+            <div class="layer-row">
+              <span>TVA</span>
+              <strong id="layerVat">22 340 CFA</strong>
+            </div>
+            <div class="layer-line final"></div>
+            <div class="layer-row total-row">
+              <span>Total</span>
+              <strong id="layerTotal">133 340 CFA</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid" id="result">
+        <div class="panel">
+          <div class="panel-kicker">1. Produit</div>
+          <h2>Décrivez votre produit</h2>
+          <label for="productDescription">Description</label>
+          <textarea id="productDescription" rows="4" placeholder="Ex: chargeur téléphone usb, tissu wax, pièces auto...">chargeur téléphone usb rapide</textarea>
+
+          <button id="matchBtnSecondary" class="primary full">Trouver les codes SH</button>
+
+          <div class="results-box">
+            <h3>Codes SH candidats</h3>
+            <ul id="matchResults" class="candidate-list"></ul>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-kicker">2. Coût</div>
+          <h2>Estimation de coûts</h2>
+
+          <div class="field-row">
+            <label for="cifValue">Valeur CIF (CFA)</label>
+            <input id="cifValue" type="number" value="100000" min="0" />
+          </div>
+
+          <div class="field-row double">
+            <div>
+              <label for="freightValue">Fret (CFA)</label>
+              <input id="freightValue" type="number" value="0" min="0" />
+            </div>
+            <div>
+              <label for="insuranceValue">Assurance (CFA)</label>
+              <input id="insuranceValue" type="number" value="0" min="0" />
+            </div>
+          </div>
+
+          <div class="field-row double">
+            <div>
+              <label for="customsRate">Droit douane</label>
+              <input id="customsRate" type="number" step="0.01" value="0.10" />
+            </div>
+            <div>
+              <label for="rsRate">RS</label>
+              <input id="rsRate" type="number" step="0.01" value="0.01" />
+            </div>
+          </div>
+
+          <div class="field-row double">
+            <div>
+              <label for="pcRate">PC</label>
+              <input id="pcRate" type="number" step="0.01" value="0.02" />
+            </div>
+            <div>
+              <label for="vatRate">TVA</label>
+              <input id="vatRate" type="number" step="0.01" value="0.18" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <label for="specificTaxes">Taxes spécifiques</label>
+            <input id="specificTaxes" type="number" step="0.01" value="0.00" />
+          </div>
+
+          <button id="calculateBtn" class="secondary full">Calculer</button>
+          <button id="exportBtn" class="ghost full" type="button">Télécharger le devis</button>
+
+          <div class="cost-summary">
+            <div class="summary-row">
+              <span>Droit de douane</span>
+              <strong id="customsValue">0 CFA</strong>
+            </div>
+            <div class="summary-row">
+              <span>Redevance statistique</span>
+              <strong id="rsValue">0 CFA</strong>
+            </div>
+            <div class="summary-row">
+              <span>Prélèvement communautaire</span>
+              <strong id="pcValue">0 CFA</strong>
+            </div>
+            <div class="summary-row">
+              <span>TVA</span>
+              <strong id="vatValue">0 CFA</strong>
+            </div>
+            <div class="summary-row total">
+              <span>Total estimé</span>
+              <strong id="totalValue">0 CFA</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="legal-note">
+        Estimation à titre indicatif — la déclaration officielle relève d'un commissionnaire en douane agréé.
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+([Security.Principal.WindowsPrincipal] `
+[Security.Principal.WindowsIdentity]::GetCurrent()
+).IsInRole(
+[Security.Principal.WindowsBuiltInRole]::Administrator
+)

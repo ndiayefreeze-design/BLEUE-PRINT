@@ -1,0 +1,10 @@
+{
+  "total_rows": 3,
+  "valid_rows": 3,
+  "quality_rate_percent": 100.0,
+  "manual_review_required": [],
+  "validation_threshold_percent": 98.0,
+  "status": "quality_ok",
+  "source_pdf": "demo_mode_no_pdf_available",
+  "mode": "demo_mode"
+}

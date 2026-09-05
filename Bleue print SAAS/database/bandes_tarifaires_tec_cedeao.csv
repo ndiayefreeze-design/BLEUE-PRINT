@@ -1,0 +1,6 @@
+categorie,taux_droit_douane,description,nombre_lignes_tarifaires_approx,source
+0,0%,"Biens sociaux essentiels (ex: médicaments)",85,"Douanes sénégalaises / douane malienne 2015"
+1,5%,"Biens de première nécessité, matières premières de base, biens d'équipement, intrants spécifiques",non_precise,"CEDEAO 2015 / thetradehub.eu"
+2,10%,"Intrants et produits intermédiaires",1373,"douane malienne 2015"
+3,20%,"Biens de consommation finale",2165,"douane malienne 2015 / douanes.sn"
+4,35%,"5e bande - biens spécifiques nécessitant une protection (développement économique régional)",130,"douanes.sn / douane.gouv.fr fiche Sénégal"

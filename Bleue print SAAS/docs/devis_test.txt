@@ -1,0 +1,22 @@
+BLEUE PRINT - Devis estimatif
+===========================
+Produit: Chargeur téléphone USB
+Code SH: 8504
+CIF: 50,000.00 CFA
+
+Détail des taxes:
+Droit de douane: 5,000.00 CFA
+Redevance statistique: 500.00 CFA
+Prélèvement communautaire: 1,000.00 CFA
+Taxe spécifique: 0.00 CFA
+TVA: 10,170.00 CFA
+Total estimé: 66,670.00 CFA
+
+Documents généralement requis:
+- Facture commerciale (Obligatoire) : Facture du fournisseur obligatoire.
+- BL / connaissement (Obligatoire) : Document de transport et preuve de réception.
+- Certificat d'origine (Selon cas) : Obligatoire selon l'origine et le type de produit.
+- Certificat sanitaire (Selon cas) : À vérifier selon la catégorie.
+- Certificat phytosanitaire (Selon cas) : À vérifier selon les produits agricoles.
+
+Estimation à titre indicatif — la classification tarifaire officielle et la déclaration en douane relèvent exclusivement d'un commissionnaire en douane agréé via GAINDE.

@@ -1,0 +1,8 @@
+code,nom_complet,taux,assiette,source,notes
+DD,Droit de Douane,"0% / 5% / 10% / 20% / 35% selon catégorie TEC",Valeur CAF,"douanes.sn - LE TABLEAU DES DROITS ET TAXES","Dépend de la catégorie TEC du code SH (voir fichier 03)"
+RS,Redevance Statistique,1%,Valeur CAF,"douanes.sn / douane.gouv.fr","Perçue même sur produits exonérés du droit de douane, sauf franchises diplomatiques"
+PCS,Prélèvement Communautaire de Solidarité (UEMOA),0.8%,Valeur CAF,"douane.gouv.fr - fiche Sénégal 2021","Ressource affectée à l'UEMOA"
+PC,Prélèvement Communautaire (CEDEAO),0.5%,Valeur CAF,"douanes.sn / douane.gouv.fr","Dû lors de la mise à la consommation de produits importés de pays tiers"
+COSEC,Prélèvement Conseil Sénégalais des Chargeurs,0.4%,Valeur CAF,"agence-adocc.com - fiche export Sénégal","Spécifique au Sénégal, généralement lié au fret maritime - à vérifier au cas par cas"
+TVA,Taxe sur la Valeur Ajoutée,18%,"Valeur CAF + DD + RS + PCS + PC (base à confirmer précisément)","douanes.sn - taux unique","Sauf produits exonérés - c'est la dernière taxe appliquée, sur une base cumulée"
+TCI,Taxe Conjoncturelle à l'Importation,variable,Valeur CAF,"UEMOA règlement 2/97/CM/UEMOA","Taxe de sauvegarde ponctuelle sur certains produits sensibles (riz, sucre, etc.) - taux à vérifier produit par produit"

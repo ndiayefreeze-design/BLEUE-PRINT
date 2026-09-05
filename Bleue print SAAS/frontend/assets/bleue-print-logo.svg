@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">BLEUE PRINT</title>
+  <desc id="desc">X peint au pinceau dans des tons aubergine, noir et or</desc>
+  <defs>
+    <linearGradient id="signature" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D0B0F"/>
+      <stop offset="0.7" stop-color="#20101E"/>
+      <stop offset="1" stop-color="#B8863B"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#FCFBFD"/>
+  <path d="M112 84 C136 64 158 72 176 98 L410 372 C426 392 424 414 405 430 C388 444 369 437 350 416 L118 144 C98 121 94 101 112 84Z" fill="#0D0B0F"/>
+  <path d="M402 82 C424 96 421 119 402 142 L144 403 C125 423 105 425 89 409 C73 392 78 371 99 349 L358 91 C373 76 389 73 402 82Z" fill="#4A2B5C"/>
+  <path d="M346 361 C365 380 384 400 404 421 C418 436 433 440 449 430 C465 420 466 403 454 387 L410 333 C393 314 374 318 346 361Z" fill="url(#signature)"/>
+</svg>
